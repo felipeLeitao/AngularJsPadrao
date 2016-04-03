@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+
+<body ui-view>
+
+    <!--
+        Importar o angular para nossa aplicação
+    -->
+    <script src="Assets/angular.min.js"></script>
+
+    <!-- Esse cara vai cuidar das rotas -->
+    <script src="Assets/angular-ui-router.js"></script>
+
+    <!-- Meu modulo principal -->
+    <script src="app/modules/app.module.js"></script>
+
+    <!-- Nosso arquivo de configuração  -->
+    <script src="app/config/app.config.js"></script>
+
+</body>
+</html>
