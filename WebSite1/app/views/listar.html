@@ -1,4 +1,4 @@
-﻿<div>
+﻿<div ng-controller="listarController as vm">
 
     <h2>Listar</h2>
 
@@ -10,11 +10,11 @@
             <td>Telefone</td>
         </tr>
 
-        <tr>
-            <td>Codigo</td>
-            <td>Nome</td>
-            <td>Email</td>
-            <td>Telefone</td>
+        <tr ng-repeat="item in vm.listaAmigos">
+            <td>{{item.id}}</td>
+            <td>{{item.nome}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.telefone}}</td>
         </tr>
     </table>
 
