@@ -19,8 +19,13 @@ function () {
                 });
         }
 
-        this.cadastrar = function () {
-
+        this.cadastrar = function (amigo) {
+            return $http(
+                {
+                    url: url + "amigo/cadastrar",
+                    method: 'POST',
+                    data : amigo
+                });
         }
 
 
